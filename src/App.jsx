@@ -1,35 +1,19 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Counter from './component/Counter.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
 
-  return (
+  return ( 
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1>useState Hook</h1>
+      <p>Local State Management</p>
     </>
   )
 }
 
 export default App
+
+
+// IN react, the useState hook is a fundamental tool for managing local state within functional components. It allows developers to add stateful logic to their components without needing to convert them into class components. The useState hook returns an array with two elements: the current state value and a function to update that state. This makes it easy to create interactive and dynamic user interfaces in React applications.
