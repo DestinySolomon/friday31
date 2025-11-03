@@ -2,6 +2,7 @@
 import './App.css'
 import Counter from './component/Counter.jsx'
 import Validate from './component/Validate.jsx'
+import Form from './component/Form.jsx'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <h1>useState Hook</h1>
       <Counter />
       <Validate />
+      <Form />
     </>
   )
 }
